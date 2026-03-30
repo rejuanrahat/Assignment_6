@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "name": "AI Writing Pro",
+        "description": "Advanced AI-powered writing assistant for professionals and content creators who need high-quality content fast.",
+        "price": 29,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "AI Content Generation",
+            "Grammar & Style Check",
+            "SEO Optimization",
+            "Plagiarism Detector"
+        ],
+        "icon": "✍️"
+    },
+    {
+        "id": 2,
+        "name": "Premium Stock Assets",
+        "description": "Access over 10 million high-quality photos, videos, and graphics for your creative projects.",
+        "price": 19,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "10M+ Stock Photos",
+            "4K Video Clips",
+            "Vector Graphics",
+            "Commercial License"
+        ],
+        "icon": "🖼️"
+    },
+    {
+        "id": 3,
+        "name": "Video Creator Suite",
+        "description": "Professional video editing suite with AI-powered tools for creating stunning visual content effortlessly.",
+        "price": 39,
+        "period": "monthly",
+        "tag": "Best Seller",
+        "tagType": "best-seller",
+        "features": [
+            "4K Video Editing",
+            "AI Scene Detection",
+            "Motion Graphics",
+            "Cloud Rendering"
+        ],
+        "icon": "🎬"
+    },
+    {
+        "id": 4,
+        "name": "SEO Analytics Pro",
+        "description": "Comprehensive SEO platform to boost your website rankings and drive consistent organic traffic growth.",
+        "price": 25,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "Keyword Research",
+            "Rank Tracking",
+            "Backlink Analysis",
+            "Competitor Insights"
+        ],
+        "icon": "📊"
+    },
+    {
+        "id": 5,
+        "name": "Design Studio Max",
+        "description": "All-in-one design platform with 500+ professional templates for social media, presentations, and marketing.",
+        "price": 35,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "500+ Templates",
+            "Brand Kit Builder",
+            "Team Collaboration",
+            "Export to PDF/PNG"
+        ],
+        "icon": "🎨"
+    },
+    {
+        "id": 6,
+        "name": "Social Media Scheduler",
+        "description": "Schedule and automate social media posts across all platforms from one centralized smart dashboard.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "Best Seller",
+        "tagType": "best-seller",
+        "features": [
+            "Multi-Platform Posting",
+            "Analytics Dashboard",
+            "Content Calendar",
+            "Auto-Scheduling"
+        ],
+        "icon": "📱"
+    },
+    {
+        "id": 7,
+        "name": "Code Review AI",
+        "description": "AI-powered code review tool that catches bugs, improves code quality, and enforces best practices automatically.",
+        "price": 49,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "AI Bug Detection",
+            "Code Quality Score",
+            "GitHub PR Integration",
+            "Multi-Language Support"
+        ],
+        "icon": "💻"
+    },
+    {
+        "id": 8,
+        "name": "Cloud Storage Pro",
+        "description": "Secure and scalable cloud storage with real-time collaboration, file versioning, and advanced management tools.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "2TB Secure Storage",
+            "Real-time Sync",
+            "Version History",
+            "End-to-End Encryption"
+        ],
+        "icon": "☁️"
+    }
+]
