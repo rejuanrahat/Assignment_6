@@ -1,4 +1,3 @@
-import link from 'daisyui/components/link'
 import { ShoppingCart } from 'lucide-react'
 
 const navbar = ({ cartCount }) => {
@@ -56,3 +55,5 @@ const navbar = ({ cartCount }) => {
         </nav>
     )
 }
+
+export default navbar

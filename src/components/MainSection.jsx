@@ -4,10 +4,10 @@ import products from '../data/products.json'
 import ProductCard from './ProductCard'
 import CartItem from './CartItem'
 
-const MainSection = ({ CartItem, addToCart, removeFromCart, clearCart }) => {
+const MainSection = ({ cartItems, addToCart, removeFromCart, clearCart }) => {
     const [activeTab, setActiveTab] = useState('products')
 
-    const total = CartItems.reduce((sum, item) => sum + item.price, 0)
+    const total = cartItems.reduce((sum, item) => sum + item.price, 0)
 
     return (
         <section id='products' className='py-20 px-4 bg-gray-50'>
@@ -44,12 +44,12 @@ const MainSection = ({ CartItem, addToCart, removeFromCart, clearCart }) => {
                     >
                         <ShoppingCart className='w-4 h-4' />
                         Cart
-                        {cardItems.length > 0 && (
+                        {cartItems.length > 0 && (
                             <span className={`font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center ${activeTab === 'cart'
                                 ? 'bg-white text-violet-600'
                                 : 'bg-violet-600 text-white'
                                 }`}>
-                                {CartItems.length}
+                                {cartItems.length}
                             </span>
                         )}
                     </button>
@@ -61,6 +61,7 @@ const MainSection = ({ CartItem, addToCart, removeFromCart, clearCart }) => {
                             <ProductCard
                                 key={product.id}
                                 product={product}
+                                onAddToCart={addToCart}
                             />
                         ))}
                     </div>
@@ -69,7 +70,7 @@ const MainSection = ({ CartItem, addToCart, removeFromCart, clearCart }) => {
                 {activeTab === 'cart' && (
                     <div className='max-w-2xl mx-auto'>
 
-                        {cardItems.length === 0 ? (
+                        {cartItems.length === 0 ? (
                             <div className='text-center py-20'>
                                 <ShoppingCart className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                                 <h3 className='text-xl font-bold text-gray-700 mb-2'>Your cart is empty</h3>
@@ -87,7 +88,7 @@ const MainSection = ({ CartItem, addToCart, removeFromCart, clearCart }) => {
                             <div>
 
                                 <div className='space-y-3 mb-6'>
-                                    {CartItems.map((item) => (
+                                    {cartItems.map((item) => (
                                         <CartItem
                                             key={item.id}
                                             item={item}
@@ -99,7 +100,7 @@ const MainSection = ({ CartItem, addToCart, removeFromCart, clearCart }) => {
                                 <div className='bg-white rounded-2xl border border-violet-100 shadow-md p-6'>
                                     <div className='flex justify-between items-center mb-4'>
                                         <span className='text-gray-600 font-medium'>
-                                            Total ({CartItems.length} item{CartItems.length > 1 ? 's' : ''})
+                                            Total ({cartItems.length} item{cartItems.length > 1 ? 's' : ''})
                                         </span>
                                         <span className='text-2xl font-extrabold text-violet-600'>
                                             ${total}
