@@ -53,7 +53,7 @@ const plans = [
 
 const Pricing = () => {
     return (
-        <section id='pricing' className='py-20 px-4 bg-gradient-to-r from-violet-50 to-indigo-50'>
+        <section id='pricing' className='py-20 px-4 bg-gradient-to-br from-violet-50 to-indigo-50'>
             <div className='max-w-7xl mx-auto'>
 
 
@@ -102,7 +102,7 @@ const Pricing = () => {
                                 {plan.features.map((feature) => (
                                     <li
                                         key={feature}
-                                        className={`flex items-center gap-3 text-sm ${plan.highlighted ? 'text-violet-200' : 'text-gray-600'}`}
+                                        className={`flex items-center gap-2 text-sm ${plan.highlighted ? 'text-violet-200' : 'text-gray-600'}`}
                                     >
                                         <Check className={`w-4 h-4 shrink-0 ${plan.highlighted ? 'text-white' : 'text-violet-500'}`} />
                                         {feature}

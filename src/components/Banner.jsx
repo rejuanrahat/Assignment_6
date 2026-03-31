@@ -24,7 +24,7 @@ const Banner = () => {
                         </p>
 
                         <a
-                            href="products"
+                            href="#products"
                             className='inline-flex items-center gap-1 text-violet-600 font-semibold text-sm mb-8 hover:underline'
                         >
                             Explore Products
@@ -33,17 +33,17 @@ const Banner = () => {
 
                         <div className='flex flex-col sm:flex-row gap-4'>
                             <a
-                                href="products"
+                                href="#products"
                                 className='bg-violet-600 hover:bg-violet-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-200 shadow-lg hover:shadow-violet-300 text-center text-sm'
                             >
                                 Explore Products
                             </a>
                             <a
-                                href="products"
+                                href="#products"
                                 className='inline-flex items-center justify-center gap-2 border-2 border-gray-300 hover:border-violet-400 text-gray-700 hover:text-violet-600 font-semibold px-8 py-3.5 rounded-full transition-all duration-200 text-sm'
                             >
-                                <span className='w-7 h-7 bg-gray-100 rounded-full flesx items-center justify-center'>
-                                    <Play className='w-4 h-4 text-gray-600' />
+                                <span className='w-7 h-7 bg-gray-100 rounded-full flex items-center justify-center'>
+                                    <Play className='w-3 h-3 fill-gray-600' />
                                 </span>
                                 Watch Demo
                             </a>

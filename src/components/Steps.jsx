@@ -49,7 +49,7 @@ const Steps = () => {
                                     {step.number}
                                 </div>
 
-                                <div className="w-20 h-20 bg-violet-100 rounded-full flex items-center mx-auto mb-6">
+                                <div className="w-20 h-20 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-6">
                                     <img
                                         src={step.image}
                                         alt={step.title}

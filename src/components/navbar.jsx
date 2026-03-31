@@ -1,6 +1,6 @@
 import { ShoppingCart } from 'lucide-react'
 
-const navbar = ({ cartCount }) => {
+const Navbar = ({ cartCount }) => {
     return (
         <nav className='bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -13,10 +13,10 @@ const navbar = ({ cartCount }) => {
                     </div>
 
                     <div className='hidden md:flex items-center gap-8'>
-                        {['products', 'Features', 'priching', 'Testimonials', 'FAQ'].map((link) => (
+                        {['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ'].map((link) => (
                             <a
                                 key={link}
-                                href={`${link.toLocaleLowerCase()}`}
+                                href={`#${link.toLowerCase()}`}
                                 className='text-gray-600 hover:text-violet-600 font-medium text-sm transition-colors duration-200
                                 '>
                                 {link}
@@ -44,9 +44,9 @@ const navbar = ({ cartCount }) => {
                         <a
                             href="products"
                             className='bg-violet-600 hover:bg-violet-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-violet-300'
-                            >
-                                Get Started
-                            </a>
+                        >
+                            Get Started
+                        </a>
                     </div>
 
 
@@ -56,4 +56,4 @@ const navbar = ({ cartCount }) => {
     )
 }
 
-export default navbar
+export default Navbar

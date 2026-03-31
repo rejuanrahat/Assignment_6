@@ -1,21 +1,37 @@
 const CTA = () => {
     return (
-        <section className="py-16 px-4 bg-linear-to-r from-violet-600 to-purple-600">
-            <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Ready to Transform Your Workflow?
+        <section className="bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 py-20 px-4">
+            <div className="max-w-3xl mx-auto text-center">
+
+                <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
+                    Ready To Transform Your Workflow?
                 </h2>
-                <p className="text-violet-100 text-lg mb-8 max-w-2xl mx-auto">
-                    Join thousands of professionals who are already using our AI-powered tools to boost their productivity.
+
+                <p className="text-white/80 text-lg mb-8 leading-relaxed">
+                    Join thousands of professionals who are already using Digitools to work smarter.
+                    <br />
+                    Start your free trial today.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-white text-violet-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-50 transition-colors">
-                        Get Started Free
-                    </button>
-                    <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-violet-600 transition-colors">
-                        Learn More
-                    </button>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                    <a
+                        href="#products"
+                        className="bg-white text-violet-600 hover:bg-violet-50 font-bold px-8 py-3.5 rounded-full transition-all duration-200 shadow-lg text-sm"
+                    >
+                        Explore Products
+                    </a>
+
+                    <a
+                        href="#pricing"
+                        className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-3.5 rounded-full transition-all duration-200 text-sm"
+                    >
+                        View Pricing
+                    </a>
                 </div>
+
+                <p className="text-white/60 text-sm">
+                    14-day free trial &nbsp;•&nbsp; No credit card required &nbsp;•&nbsp; Cancel anytime
+                </p>
             </div>
         </section>
     )

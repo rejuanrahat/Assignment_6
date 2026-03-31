@@ -12,7 +12,7 @@ const CartItem = ({ item, onRemove }) => {
                 </div>
                 <div>
                     <h4 className='font-semibold text-gray-900 text-sm'>{name}</h4>
-                    <p className='text-gray-500 text-xs mt-0.5'>${price}/{period}</p>
+                    <p className='text-gray-500 text-xs mt-0.5'>${price} / {period}</p>
                 </div>
             </div>
 

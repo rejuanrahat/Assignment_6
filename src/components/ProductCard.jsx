@@ -6,14 +6,14 @@ const tagStyles = {
     'best-seller': 'bg-amber-100 text-amber-700',
 }
 
-const productCard = ({ product, onAddToCart }) => {
+const ProductCard = ({ product, onAddToCart }) => {
     const { name, description, price, period, tag, tagType, features, icon } = product
 
     return (
         <div className='bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col p-6'>
 
             <div className='flex items-start justify-between mb-4'>
-                <div className='text-4xl'> {icon} </div>
+                <div className='text-4xl'>{icon}</div>
                 <span className={`text-xs font-bold px-3 py-1 rounded-full ${tagStyles[tagType] || 'bg-gray-100 text-gray-600'}`}>
                     {tag}
                 </span>
@@ -41,11 +41,11 @@ const productCard = ({ product, onAddToCart }) => {
                 onClick={() => onAddToCart(product)}
                 className='w-full flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2.5 rounded-xl transition-colors duration-200'
             >
-                <ShoppingCart className='w-5 h-5' />
+                <ShoppingCart className='w-4 h-4' />
                 Buy Now
             </button>
         </div>
     )
 }
 
-export default productCard
+export default ProductCard

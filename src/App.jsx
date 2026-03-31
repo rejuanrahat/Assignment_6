@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { toast } from 'react-toastify'
-import Navbar from './components/Navbar'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import Navbar from './components/navbar'
 import Banner from './components/Banner'
-import Stats from './components/Stats'
+import Stats from './components/stats'
 import MainSection from './components/MainSection'
 import Steps from './components/Steps'
 import Pricing from './components/Pricing'
@@ -49,6 +50,7 @@ function App() {
       <Pricing />
       <CTA />
       <Footer />
+      <ToastContainer position="bottom-right" autoClose={3000} theme="colored" />
     </div>
   )
 }

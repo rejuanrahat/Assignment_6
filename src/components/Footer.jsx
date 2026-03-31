@@ -47,7 +47,7 @@ const Footer = () => {
                         <div>
                             <h4 className="text-white font-semibold mb-5 text-sm">Resources</h4>
                             <ul className="space-y-3 text-sm mb-8">
-                                {['Help Center', 'Contact Support', 'Privacy Policy', 'Terms of Service'].map((item) => (
+                                {['Documentation', 'Help Center', 'Community', 'Contact'].map((item) => (
                                     <li key={item}>
                                         <a href="" className="text-gray-400 hover:text-white transition-colors
                                         ">
