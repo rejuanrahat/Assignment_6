@@ -6,13 +6,13 @@ can brwse, select, and perchess premium digital products.
 
 ## Technologies Used
 
-**REact.js**
-**Tailwind CSS**
-**DaisyUI**
-**Java Script ES6+**
-**React Toastify**
-**JSON**
-**Vite**
+1. **REact.js**
+2. **Tailwind CSS**
+3. **DaisyUI**
+4. **Java Script ES6+**
+5. **React Toastify**
+6. **JSON**
+7. **Vite**
 
 ## Key Features
 
